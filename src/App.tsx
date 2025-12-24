@@ -1,13 +1,16 @@
-import React, { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Search, SortAsc, SortDesc, Youtube, Users, Video, Calendar, Globe, ExternalLink } from 'lucide-react';
 import './App.css';
 
+type SortField = 'subscribers' | 'videos' | 'name';
+type SortOrder = 'asc' | 'desc';
+
 const AILearningPortfolio = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('subscribers');
-  const [sortOrder, setSortOrder] = useState('desc');
+  const [sortBy, setSortBy] = useState<SortField>('subscribers');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const channels = [
     {
@@ -585,8 +588,6 @@ const AILearningPortfolio = () => {
   ];
 
   const categories = ['all', ...new Set(channels.map(c => c.category))];
-  const allTags = [...new Set(channels.flatMap(c => c.tags))].sort();
-
   const filteredAndSortedChannels = useMemo(() => {
     let filtered = channels.filter(channel => {
       const matchesSearch = channel.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -622,13 +623,7 @@ const AILearningPortfolio = () => {
     return filtered;
   }, [searchTerm, sortBy, sortOrder, selectedCategory, selectedTags]);
 
-  const toggleTag = (tag) => {
-    setSelectedTags(prev => 
-      prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
-    );
-  };
-
-  const toggleSort = (field) => {
+  const toggleSort = (field: SortField) => {
     if (sortBy === field) {
       setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc');
     } else {
