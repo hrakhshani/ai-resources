@@ -36,7 +36,7 @@ const AILearningPortfolio = () => {
       joined: "Sep 2013",
       description: "AI research, education, and commentary by Andrej Karpathy, former Director of AI at Tesla, founding member of OpenAI, and founder of Eureka Labs.",
       tags: ["Artificial Intelligence", "Deep Learning", "Neural Networks", "Machine Learning", "AI Education"],
-      website: "https://karpathy.ai",
+      website: "karpathy.ai",
       location: "United States"
     },
     {
@@ -75,7 +75,7 @@ const AILearningPortfolio = () => {
       joined: "Mar 2013",
       description: "Explaining cutting-edge AI research papers in an accessible way.",
       tags: ["Research Papers", "AI News", "Deep Learning", "Computer Graphics"],
-      website: "twominutepapers.com",
+      website: "users.cg.tuwien.ac.at/zsolnai/",
       location: "Austria"
     },
     {
@@ -205,7 +205,7 @@ const AILearningPortfolio = () => {
       joined: "Jan 2017",
       description: "Business and tech interviews including AI leaders and entrepreneurs.",
       tags: ["Business", "Entrepreneurship", "AI Industry", "Interviews"],
-      website: "diaryofaceo.com",
+      website: "stevenbartlett.com",
       location: "UK"
     },
     {
@@ -257,7 +257,7 @@ const AILearningPortfolio = () => {
       joined: "Mar 2020",
       description: "Clear explanations of ML concepts and paper implementations.",
       tags: ["Machine Learning", "Deep Learning", "Tutorials", "Paper Implementations"],
-      website: "normalizednerd.com",
+      website: "www.youtube.com/@NormalizedNerd",
       location: "India"
     },
     {
@@ -465,7 +465,7 @@ const AILearningPortfolio = () => {
       joined: "Sep 2020",
       description: "AI tutorials and practical implementations.",
       tags: ["Tutorials", "Practical AI", "Implementations", "Projects"],
-      website: "bycloudai.com",
+      website: "www.youtube.com/@bycloudAI",
       location: "USA"
     },
     {
@@ -530,7 +530,7 @@ const AILearningPortfolio = () => {
       joined: "Aug 2022",
       description: "AI news, trends, and future predictions.",
       tags: ["AI News", "Trends", "Future of AI", "Analysis"],
-      website: "airevolution.ai",
+      website: "www.youtube.com/@airevolutionx",
       location: "USA"
     },
     {
@@ -582,8 +582,8 @@ const AILearningPortfolio = () => {
       joined: "Jun 2020",
       description: "AI research and technical tutorials.",
       tags: ["Research", "Technical", "Tutorials"],
-      website: "mehrzadsamadi.com",
-      location: "Iran"
+      website: "www.youtube.com/@mehrzad.samadi",
+      location: "US"
     }
   ];
 
